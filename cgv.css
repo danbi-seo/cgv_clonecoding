@@ -1,0 +1,418 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', '맑은 고딕', '돋움', Dotum, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+/*   헤더   */
+.banner {
+    width: 100%;
+    height: 80px;
+}
+
+.top-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.top-banner > img {
+    width: 980px;
+}
+
+.head-wrap {
+    display: flex;
+    width: 70%;
+    height: 160px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.head-wrap-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;   
+}
+
+#cgv-logo {
+    width: 140px;
+    height: 140px;
+}
+
+.logo-p {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 40px;
+    justify-content: center;
+    margin-top: 40px;
+    white-space: nowrap;
+}
+
+.head-wrap-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-items: center;
+    gap: 40px;
+}
+
+#login, #signup, #mycgv, #customer {
+    display: flex;           
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: column;
+}
+
+#login > img, #signup > img ,#mycgv > img , #customer > img{
+    height: 40%;
+}
+
+.navigator {
+    display: flex;
+    height: 60px;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(200, 200, 200);;
+    border-bottom: 3px solid red;
+}
+
+.nav-menu{
+    display: flex;
+    font-weight: 500;
+    font-size: 22px;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+}
+
+.menu-btn {
+    all: unset;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    justify-content: right;
+}
+
+/*   콘텐츠 - daywrap   */
+.showtimes-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: 1;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.sect-schedule {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    margin: 0px;
+    padding: 0;
+    justify-content: center;
+    align-items: stretch;
+    margin-right: 30px;
+}
+
+.days-wrap {
+    display: flex;
+    width: 70%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    margin: 0 auto;
+}
+
+.day {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+.days {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: gray;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.day > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+
+.booking-day {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.sect-guide {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    height: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    border-bottom: 1.5px solid black;
+}
+
+.sect-guide > p {
+    color: rgb(140, 67, 18);
+}
+
+.guide-box {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.early, .midnight {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/*   콘텐츠 - showtime-wrap   */
+
+.sect-showtimes {
+    box-sizing: border-box;
+    display: flex;
+    width: 70%;
+    margin: 20px auto;
+    flex-direction: column;
+    overflow-y: auto;
+    height: auto;
+    flex-grow: 1;   
+}
+
+.movie {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.movie li {
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.movie > strong {
+    font-size: 30px;
+}
+
+
+.now-playing {
+    margin-left: 15px;
+    margin-right: 3px;
+}
+
+.rating-box{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+    background-color: orange;
+    border-radius: 2px;
+    padding: 3px 5px;
+    margin-right: 5px;
+}
+
+.timeline {
+    display: flex;
+}
+
+.time-line {
+    font-weight: 900;
+}
+
+.all-showtimes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding-left: 15px;
+    border-bottom: 1.5px solid gray;
+}
+
+.screen-showtime-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.times-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0px;
+    padding-bottom: 20px;
+}
+
+.time-box {
+    display: flex;
+    width: 90px;
+    height: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border : 1.5px solid gray;
+    position: relative;
+}
+
+.time-box.sold-out {
+    color: #999; 
+    border-color: #ddd; 
+    cursor: not-allowed;
+}
+.time-box.sold-out .remaining-seats {
+    color: #999 !important; 
+}
+
+
+/*   화살표 스타일   */
+.screen-info-line {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px; 
+    font-size: 18px; 
+    color: #333;
+}
+.screen-showtime-group::before {
+    content: '▶'; 
+    font-size: 0.7em; 
+    color: #666; 
+    margin-right: 5px; 
+    display: inline-block; 
+}
+
+/*     팝업창     */
+.time-box-popup {
+    visibility: hidden;
+    opacity: 0;       
+    position: absolute;
+    bottom: 100%;      
+    left: 50%;
+    transform: translateX(-50%) translateY(-5px);
+    width: 120px;  
+    height: 200px;
+    background-color: white;
+    color: white;    
+    border: 2px solid #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;    
+    padding: 8px 12px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 0.9em;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, transform 0.2s ease-in-out;
+    cursor: default;
+}
+
+.time-box:hover .time-box-popup {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); 
+}
+
+
+/*    스크롤픽스창    */
+.fixdeBtn-wrap {
+    display: flex;
+    position: fixed;
+    height: auto;
+    bottom: 80px;
+    right: 15%;
+    outline-style: none;
+    justify-content: right;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+}
+
+.ticket {
+    width: 160px;
+    height: 60px;
+    padding: 16px;
+    color: white;
+    background-image: linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    transition: right 0.4s;
+    font-size: 20px;
+    border: none;
+    font-weight: 500;
+}   
+
+.tothetop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 12px 24px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/*    footer    */
+
+.footer {
+    width: 70%;
+    margin: 200px auto;
+    color: gray;
+}

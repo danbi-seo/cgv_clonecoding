@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV클론코딩</title>
+		<link rel="stylesheet" href="cgv.css">
+</head>
+<body>
+	<div class="header">
+		<div class="top-banner">
+			<img src="./img/top-banner.jpg" class="banner"></img>
+		</div>	
+		<div class="head-wrap">
+			<div class="head-wrap-left">
+				<img src="./img/CGV_logo.svg" id="cgv-logo" alt="logo">
+				<span class="logo-p">D E E P &nbsp; D I V E &nbsp; S P A C E</span>
+			</div>
+			<div class="head-wrap-right">
+				<div class="login" id="login">
+					<img src="./img/loginPassword.png" alt="login">
+					<p>로그인</p>
+				</div>
+				<div class="signup" id="signup">
+					<img src="./img/loginJoin.png" alt="login">
+					<P>회원가입</p>
+				</div>
+				<div class="mycgv" id="mycgv">
+					<img src="./img/loginMember.png" alt="login">
+					<P>MY CGV</p>
+				</div>
+				<div class="customer" id="customer">
+					<img src="./img/loginCustomer.png" alt="login">
+					<P>고객센터</p>
+				</div>
+			</div>	
+		</div>
+		<div class="navigator">
+			<ul class="nav-menu">
+				<button class="menu-btn"><li>영화</li></button>
+				<button class="menu-btn"><li>극장</li></button>
+				<button class="menu-btn"><li>예매</li></button>
+				<button class="menu-btn"><li>스토어</li></button>
+				<button class="menu-btn"><li>이벤트</li></button>
+				<button class="menu-btn">혜택</li></button>
+			<div class="search">
+				<input type="text">
+				<button type="submit"></button>
+			</div>
+		</div>
+	</div>
+	<!--contents start-->
+	<div class="showtimes-wrap">
+		<div class="sect-schedule">
+			<div class="days-wrap">
+				<button type="button" class="btn-prev">이전 날짜보기</button>
+				<ul class="days">
+					<!-- <li class="on">
+						<div class="day">
+							<span>06월<br>토</span>
+							<p class="booking-day">14</p>
+						</div>
+					</li>
+					<li>
+						<div class="day">
+							<span>06월<br>일</span>
+							<p class="booking-day">15</p>
+						</div>
+					</li>
+					<li>
+						<div class="day">
+							<span>06월<br>월</span>
+							<p class="booking-day">16</p>
+						</div>
+					</li>
+					<li>
+						<div class="day">
+							<span>06월<br>화</span>
+							<p class="booking-day">17</p>
+						</div>
+					</li>
+					<li>
+						<div class="day">
+							<span>06월<br>수</span>
+							<p class="booking-day">18</p>
+						</div>
+					</li>
+					<li>
+						<div class="day">
+							<span>06월<br>목</span>
+							<p class="booking-day">19</p>
+						</div>
+					</li>
+					<li>
+						<div class="day">
+							<span>06월<br>금</span>
+							<p class="booking-day">18</p>
+						</div>
+					</li>
+					<li>
+						<div class="day">
+							<span>06월<br>토</span>
+							<p class="booking-day">19</p>
+						</div>
+					</li> -->
+				</ul>
+				<button type="button" class="btn-next">다음 날짜보기</button>
+			</div>
+		</div>
+		<div class="sect-guide">
+			<ul class="guide-box">
+					<li><span class="early">☀️모닝</span></li>
+					<li><span class="midnight">🌙심야</span></li>
+				</ul>
+				<p>* 시간을 클릭하시면 빠른 예매를 하실 수 있습니다.</p>
+		</div>
+		<div class="sect-showtimes">
+			<ul class="movie">
+			</ul>
+			<p>[공지] 입장 지연에 따른 관람 불편을 최소화하기 위해 영화는 10분 후 상영이 됩니다.</p>
+		</div>
+		<div class="fixdeBtn-wrap">
+			<button type="button" class="ticket">예매하기</button>
+			<button type="button" class="tothetop">↑</button>
+		</div>
+	</div>
+	<!--content end-->
+	<div class="footer">
+		<div class="bottom"></div>
+		<ul>
+			<li>회사소개</li>
+			<li>지속가능경영</li>
+			<li>IR</li>
+			<li>채용정보</li>
+			<li>광고/제휴/출점문의</li>
+			<li>이용약관</li>
+			<li>편성기준</li>
+			<li>개인정보처리방침</li>
+			<li>법적고지</li>
+			<li>이메일주소무답수집거부</li>
+			<li>윤리경영</li>
+			<li>사이버감사실</li>
+		</ul>
+		<article class="company-into-wrap">
+			<section class="company-into">
+				<address>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</address>
+				<dl>
+					<dt></dt>
+					<dt></dt>
+					<dt></dt>
+				</dl>
+			</section>
+			<section class="familysite"></section>
+		</article>
+	</div>
+	<script src="movie.js"></script>
+
+</body>
+</html>
